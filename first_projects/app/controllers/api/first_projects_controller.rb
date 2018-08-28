@@ -9,6 +9,7 @@ class Api::FirstProjectsController < ApplicationController
   end
 
   def lotto_action
+    rand = []
     @lotto_numbers = [1..60]
     6.times do 
       @lotto_numbers << rand(@lotto_numbers)
